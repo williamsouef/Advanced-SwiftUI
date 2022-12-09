@@ -16,6 +16,8 @@
 		B3FA5ED42941E287006CA051 /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA5ED22941E287006CA051 /* VisualEffectBlur.swift */; };
 		B3FA5ED52941E287006CA051 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA5ED32941E287006CA051 /* ImagePicker.swift */; };
 		B3FA5ED829433AD2006CA051 /* GradientText.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA5ED729433AD2006CA051 /* GradientText.swift */; };
+		B3FA5EDA29433BDC006CA051 /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA5ED929433BDC006CA051 /* GradientButton.swift */; };
+		B3FA5EDC29433C84006CA051 /* TextfieldIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA5EDB29433C84006CA051 /* TextfieldIcon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		B3FA5ED22941E287006CA051 /* VisualEffectBlur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualEffectBlur.swift; sourceTree = "<group>"; };
 		B3FA5ED32941E287006CA051 /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		B3FA5ED729433AD2006CA051 /* GradientText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientText.swift; sourceTree = "<group>"; };
+		B3FA5ED929433BDC006CA051 /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
+		B3FA5EDB29433C84006CA051 /* TextfieldIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextfieldIcon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				B3FA5ED729433AD2006CA051 /* GradientText.swift */,
+				B3FA5ED929433BDC006CA051 /* GradientButton.swift */,
+				B3FA5EDB29433C84006CA051 /* TextfieldIcon.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -169,7 +175,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3FA5ED42941E287006CA051 /* VisualEffectBlur.swift in Sources */,
+				B3FA5EDA29433BDC006CA051 /* GradientButton.swift in Sources */,
 				B3FA5ED829433AD2006CA051 /* GradientText.swift in Sources */,
+				B3FA5EDC29433C84006CA051 /* TextfieldIcon.swift in Sources */,
 				B3FA5EC82941E1B1006CA051 /* Persistence.swift in Sources */,
 				B3FA5ECB2941E1B1006CA051 /* Advanced_SwiftUI.xcdatamodeld in Sources */,
 				B3FA5ED52941E287006CA051 /* ImagePicker.swift in Sources */,

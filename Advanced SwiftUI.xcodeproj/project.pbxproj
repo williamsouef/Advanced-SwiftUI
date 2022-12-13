@@ -18,6 +18,8 @@
 		B3FA5ED829433AD2006CA051 /* GradientText.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA5ED729433AD2006CA051 /* GradientText.swift */; };
 		B3FA5EDA29433BDC006CA051 /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA5ED929433BDC006CA051 /* GradientButton.swift */; };
 		B3FA5EDC29433C84006CA051 /* TextfieldIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA5EDB29433C84006CA051 /* TextfieldIcon.swift */; };
+		B3FA5EDF29486ACA006CA051 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B3FA5EDE29486ACA006CA051 /* FirebaseAuth */; };
+		B3FA5EE129486BD5006CA051 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3FA5EE029486BD5006CA051 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,7 @@
 		B3FA5ED729433AD2006CA051 /* GradientText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientText.swift; sourceTree = "<group>"; };
 		B3FA5ED929433BDC006CA051 /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
 		B3FA5EDB29433C84006CA051 /* TextfieldIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextfieldIcon.swift; sourceTree = "<group>"; };
+		B3FA5EE029486BD5006CA051 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3FA5EDF29486ACA006CA051 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +75,7 @@
 				B3FA5ED629433AAC006CA051 /* Views */,
 				B3FA5EC22941E1B1006CA051 /* Assets.xcassets */,
 				B3FA5EC72941E1B1006CA051 /* Persistence.swift */,
+				B3FA5EE029486BD5006CA051 /* GoogleService-Info.plist */,
 				B3FA5EC92941E1B1006CA051 /* Advanced_SwiftUI.xcdatamodeld */,
 				B3FA5EC42941E1B1006CA051 /* Preview Content */,
 			);
@@ -120,6 +125,9 @@
 			dependencies = (
 			);
 			name = "Advanced SwiftUI";
+			packageProductDependencies = (
+				B3FA5EDE29486ACA006CA051 /* FirebaseAuth */,
+			);
 			productName = "Advanced SwiftUI";
 			productReference = B3FA5EBB2941E1AF006CA051 /* Advanced SwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -148,6 +156,9 @@
 				Base,
 			);
 			mainGroup = B3FA5EB22941E1AF006CA051;
+			packageReferences = (
+				B3FA5EDD29486ACA006CA051 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = B3FA5EBC2941E1AF006CA051 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -164,6 +175,7 @@
 			files = (
 				B3FA5EC62941E1B1006CA051 /* Preview Assets.xcassets in Resources */,
 				B3FA5EC32941E1B1006CA051 /* Assets.xcassets in Resources */,
+				B3FA5EE129486BD5006CA051 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +395,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B3FA5EDD29486ACA006CA051 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B3FA5EDE29486ACA006CA051 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3FA5EDD29486ACA006CA051 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		B3FA5EC92941E1B1006CA051 /* Advanced_SwiftUI.xcdatamodeld */ = {

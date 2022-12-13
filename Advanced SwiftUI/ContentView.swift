@@ -7,6 +7,7 @@
 
 import SwiftUI
 import AudioToolbox
+import FirebaseAuth
 
 
 struct ContentView: View {
@@ -106,7 +107,9 @@ private let generator = UISelectionFeedbackGenerator()
                     
                     
                     
-                    GradientButton()
+                    GradientButton(buttonTitle: "Create an account", buttonAction: {
+                        generator.selectionChanged()
+                    })
                     
                     Text("By clicking on Sign up, you agree to our Terms of services and Privacy policy")
                         .font(.footnote)

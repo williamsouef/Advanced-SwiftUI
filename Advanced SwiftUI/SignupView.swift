@@ -157,7 +157,7 @@ struct SignupView: View {
                                 HStack(spacing:4) {
                                     Text("Forgot your password ?")
                                         .font(.footnote)
-                                        .foregroundColor(Color.white.opacity(0.7))
+                                        .foregroundColor(Color.white.opacity(0.6))
                                     GradientText(text:"Reset your password")
                                         .font(Font.footnote.bold())
                                 }
@@ -178,7 +178,7 @@ struct SignupView: View {
         }
         
     }
-// MARK: FIREBASE AUTHENTIFICATION
+//MARK: FIREBASE AUTHENTIFICATION
     
     func signup() {
      if signupToggle {

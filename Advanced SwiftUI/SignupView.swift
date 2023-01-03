@@ -21,6 +21,7 @@ struct SignupView: View {
     @State private var showProfileView : Bool = false
     @State private var signupToggle : Bool = true
     @State private var rotationAngle = 0.0
+    @State private var fadeToggle : Bool = true
     
     
     private let generator = UISelectionFeedbackGenerator()
@@ -31,6 +32,11 @@ struct SignupView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .edgesIgnoringSafeArea(.all)
+                .opacity(fadeToggle ? 1.0 : 0.0)
+            
+            Color("secondaryBackground")
+                .edgesIgnoringSafeArea(.all)
+                .opacity(fadeToggle ? 0.0 : 1.0)
             VStack{
                 VStack(alignment: .leading, spacing: 16){
                     
@@ -123,7 +129,7 @@ struct SignupView: View {
                             }
                     }
                     
-                    
+// MARK: ANIMATIONS
                     if signupToggle {
                         Text("By clicking on Sign up, you agree to our Terms of services and Privacy policy")
                             .font(.footnote)
@@ -135,7 +141,17 @@ struct SignupView: View {
                     
                     VStack(alignment: .leading, spacing: 16, content: {
                         Button(action: {
-                            withAnimation(.easeIn(duration: 0.5)){
+                            
+                            withAnimation(.easeInOut(duration: 0.35)) {
+                                fadeToggle.toggle()
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.35) {
+                                    withAnimation(.easeInOut(duration: 0.35)){
+                                        self.fadeToggle.toggle()
+                                    }
+                                    
+                                }
+                            }
+                            withAnimation(.easeIn(duration: 0.7)){
                                 signupToggle.toggle()
                                 self.rotationAngle += 180
                             }
@@ -152,7 +168,7 @@ struct SignupView: View {
 // MARK: RESET PASSWORD
                         if !signupToggle {
                             Button(action: {
-                                print("Send reset password email")
+                                sendPasswordResetEmail()
                             }, label: {
                                 HStack(spacing:4) {
                                     Text("Forgot your password ?")
@@ -162,12 +178,24 @@ struct SignupView: View {
                                         .font(Font.footnote.bold())
                                 }
                             })
+                            Rectangle()
+                                .frame(height:1)
+                                .foregroundColor(.white.opacity(0.1))
+                            
+                            Button(action: {
+                                print("Sign in with apple")
+                            }, label: {
+                                SigninWithAppleButton()
+                                    .frame(height:50)
+                                    .cornerRadius(1)
+                            })
+
                         }
                     })
                 }
                 .padding(20)
             }
-            .rotation3DEffect(Angle(degrees: self.rotationAngle), axis: (x: 0.0, y: 1.0, z: 0.0))
+            .rotation3DEffect(Angle(degrees: self.rotationAngle), axis: (x: 0.0, y: 2.0, z: 0.0))
             .background(RoundedRectangle(cornerRadius: 30).stroke(Color.white.opacity(0.2)))
             .background(Color("secondaryBackground").opacity(0.5))
             .background(VisualEffectBlur(blurStyle: .systemThinMaterialDark))
@@ -199,6 +227,19 @@ struct SignupView: View {
              print("the user is sign in")
          }
      }
+    }
+    
+    func sendPasswordResetEmail () {
+        
+        Auth.auth().sendPasswordReset(withEmail: email) {
+            error in
+            guard error == nil else {
+                print(error!.localizedDescription)
+                return
+            }
+            print("Password reset email sent")
+        }
+        
     }
     
 }

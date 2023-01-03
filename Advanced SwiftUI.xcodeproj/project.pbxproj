@@ -21,9 +21,11 @@
 		B3FA5EDF29486ACA006CA051 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B3FA5EDE29486ACA006CA051 /* FirebaseAuth */; };
 		B3FA5EE129486BD5006CA051 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3FA5EE029486BD5006CA051 /* GoogleService-Info.plist */; };
 		B3FA5EE52948E89B006CA051 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA5EE42948E89B006CA051 /* ProfileView.swift */; };
+		B3FA5EE9294C53B0006CA051 /* SigninWithAppleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA5EE8294C53B0006CA051 /* SigninWithAppleButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B32891F129646969003D9F85 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B3FA5EBB2941E1AF006CA051 /* Advanced SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Advanced SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3FA5EBE2941E1AF006CA051 /* Advanced_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advanced_SwiftUIApp.swift; sourceTree = "<group>"; };
 		B3FA5EC02941E1AF006CA051 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
@@ -38,6 +40,7 @@
 		B3FA5EDB29433C84006CA051 /* TextfieldIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextfieldIcon.swift; sourceTree = "<group>"; };
 		B3FA5EE029486BD5006CA051 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		B3FA5EE42948E89B006CA051 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		B3FA5EE8294C53B0006CA051 /* SigninWithAppleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninWithAppleButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +58,7 @@
 		B3FA5EB22941E1AF006CA051 = {
 			isa = PBXGroup;
 			children = (
+				B32891F129646969003D9F85 /* README.md */,
 				B3FA5EBD2941E1AF006CA051 /* Advanced SwiftUI */,
 				B3FA5EBC2941E1AF006CA051 /* Products */,
 			);
@@ -73,6 +77,7 @@
 			children = (
 				B3FA5ED12941E287006CA051 /* Helpers */,
 				B3FA5EBE2941E1AF006CA051 /* Advanced_SwiftUIApp.swift */,
+				B3FA5EE8294C53B0006CA051 /* SigninWithAppleButton.swift */,
 				B3FA5EC02941E1AF006CA051 /* SignupView.swift */,
 				B3FA5EE42948E89B006CA051 /* ProfileView.swift */,
 				B3FA5ED629433AAC006CA051 /* Views */,
@@ -192,6 +197,7 @@
 				B3FA5ED42941E287006CA051 /* VisualEffectBlur.swift in Sources */,
 				B3FA5EDA29433BDC006CA051 /* GradientButton.swift in Sources */,
 				B3FA5EE52948E89B006CA051 /* ProfileView.swift in Sources */,
+				B3FA5EE9294C53B0006CA051 /* SigninWithAppleButton.swift in Sources */,
 				B3FA5ED829433AD2006CA051 /* GradientText.swift in Sources */,
 				B3FA5EDC29433C84006CA051 /* TextfieldIcon.swift in Sources */,
 				B3FA5EC82941E1B1006CA051 /* Persistence.swift in Sources */,

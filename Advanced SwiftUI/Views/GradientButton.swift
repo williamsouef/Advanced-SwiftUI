@@ -60,3 +60,8 @@ struct GradientButton: View {
         })
     }
 }
+struct GradientButton_Previews: PreviewProvider {
+    static var previews: some View {
+        GradientButton(buttonTitle: "", buttonAction: {})
+    }
+}

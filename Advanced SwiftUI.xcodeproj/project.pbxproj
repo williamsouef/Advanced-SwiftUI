@@ -26,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		B32891F129646969003D9F85 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B32891F229646D01003D9F85 /* Signin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Signin.png; sourceTree = "<group>"; };
 		B3FA5EBB2941E1AF006CA051 /* Advanced SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Advanced SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3FA5EBE2941E1AF006CA051 /* Advanced_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advanced_SwiftUIApp.swift; sourceTree = "<group>"; };
 		B3FA5EC02941E1AF006CA051 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
@@ -59,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				B32891F129646969003D9F85 /* README.md */,
+				B32891F229646D01003D9F85 /* Signin.png */,
 				B3FA5EBD2941E1AF006CA051 /* Advanced SwiftUI */,
 				B3FA5EBC2941E1AF006CA051 /* Products */,
 			);
